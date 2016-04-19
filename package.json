@@ -7,10 +7,12 @@
     "url": "https://github.com/rstacruz/markdown-it-named-headings/issues"
   },
   "dependencies": {
-    "lodash.kebabcase": "4.0.1"
+    "lodash.kebabcase": "4.0.1",
+    "unidecode": "^0.1.8"
   },
   "devDependencies": {
     "ava": "0.14.0",
+    "chokidar": "^1.4.3",
     "markdown-it": "6.0.1"
   },
   "homepage": "https://github.com/rstacruz/markdown-it-named-headings#readme",
@@ -26,6 +28,7 @@
     "url": "git+https://github.com/rstacruz/markdown-it-named-headings.git"
   },
   "scripts": {
-    "test": "ava"
+    "test": "ava",
+    "tdd": "ava --watch"
   }
 }
