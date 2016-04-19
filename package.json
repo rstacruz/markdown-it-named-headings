@@ -1,0 +1,31 @@
+{
+  "name": "markdown-it-named-headings",
+  "description": "Add IDs no heading elements in markdown-it",
+  "version": "1.0.0",
+  "author": "Rico Sta. Cruz <rico@ricostacruz.com>",
+  "bugs": {
+    "url": "https://github.com/rstacruz/markdown-it-named-headings/issues"
+  },
+  "dependencies": {
+    "lodash.kebabcase": "4.0.1"
+  },
+  "devDependencies": {
+    "ava": "0.14.0",
+    "markdown-it": "6.0.1"
+  },
+  "homepage": "https://github.com/rstacruz/markdown-it-named-headings#readme",
+  "keywords": [
+    "headings",
+    "markdown",
+    "markdown-it"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rstacruz/markdown-it-named-headings.git"
+  },
+  "scripts": {
+    "test": "ava"
+  }
+}
