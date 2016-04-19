@@ -9,6 +9,16 @@ test('add ids', t => {
   t.true(out === '<h1 id="hello">hello</h1>\n')
 })
 
+test('unicode cyrillic', t => {
+  var out = md.render('# заголовок')
+  t.true(out === '<h1 id="zagholovok">заголовок</h1>\n')
+})
+
+test('unicode japanese', t => {
+  var out = md.render('# タイトル')
+  t.true(out === '<h1 id="taitoru">タイトル</h1>\n')
+})
+
 test('kebabcase ids', t => {
   var out = md.render('# hello there')
   t.true(out === '<h1 id="hello-there">hello there</h1>\n')
