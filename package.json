@@ -26,6 +26,7 @@
     "url": "git+https://github.com/rstacruz/markdown-it-named-headings.git"
   },
   "scripts": {
-    "test": "ava"
+    "test": "ava",
+    "tdd": "ava --watch"
   }
 }
