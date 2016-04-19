@@ -1,5 +1,5 @@
 var kebabcase = require('lodash.kebabcase')
-var unidecode = require('unidecode');
+var unidecode = require('unidecode')
 
 module.exports = function plugin (md, options) {
   md.core.ruler.push('named_headings', namedHeadings.bind(null, md))
