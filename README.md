@@ -2,7 +2,7 @@
  
 > Add IDs to heading elements in markdown-it
 
-A plugin for [markdown-it][] to add `id` attributes to `h1`...`h6` elements.
+A plugin for [markdown-it][] to add `id` attributes to *h1...h6* elements.
 
 ```js
 md.render('# Example Header') 
@@ -10,8 +10,6 @@ md.render('# Example Header')
 ```
 
 [![Status](https://travis-ci.org/rstacruz/markdown-it-named-headings.svg?branch=master)](https://travis-ci.org/rstacruz/markdown-it-named-headings "See test builds")
-
-Works exactly like [markdown-it-named-headers][], except this plugin operates on the token level, not the renderer. The result is that it can be chained with other markdown-it plugins that would want to have access to the ID.
 
 ## Install
 
@@ -30,6 +28,10 @@ md.render('# hello')
 
 [markdown-it]: https://github.com/markdown-it/markdown-it
 [markdown-it-named-headers]: https://www.npmjs.com/package/markdown-it-named-headers
+
+## Prior art
+
+This works exactly like [markdown-it-named-headers][], except this plugin operates on the token level, not the renderer. The result is that it can be chained with other markdown-it plugins that would want to have access to the ID.
 
 ## Thanks
 
