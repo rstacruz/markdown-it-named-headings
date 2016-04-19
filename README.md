@@ -1,6 +1,6 @@
 # markdown-it-named-headings
  
-> Add IDs no heading elements in markdown-it
+> Add IDs to heading elements in markdown-it
 
 A plugin for [markdown-it][] to add `id` attributes to `h1`...`h6` elements.
 
