@@ -1,4 +1,5 @@
 var kebabcase = require('lodash.kebabcase')
+var unidecode = require('unidecode');
 
 module.exports = function plugin (md, options) {
   md.core.ruler.push('named_headings', namedHeadings.bind(null, md))
@@ -10,7 +11,7 @@ function namedHeadings (md, state) {
   state.tokens.forEach(function (token, i) {
     if (token.type === 'heading_open') {
       var text = md.renderer.render(state.tokens[i + 1].children, md.options)
-      var id = kebabcase(text)
+      var id = unidecode(kebabcase(text))
       var uniqId = uncollide(ids, id)
       ids[uniqId] = true
       setAttr(token, 'id', uniqId)
