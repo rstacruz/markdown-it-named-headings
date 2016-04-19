@@ -14,7 +14,7 @@ md.render('# Example Header')
 ## Install
 
 ```
-npm install --save markdown-it-named-headings`
+npm install --save markdown-it-named-headings
 ```
 
 ## Usage
